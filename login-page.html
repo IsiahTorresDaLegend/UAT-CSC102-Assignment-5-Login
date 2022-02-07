@@ -1,0 +1,58 @@
+<!--UAT-Login-Assignment, CSC 102, code written by Isiah Torres.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UAT Space Program Login</title>
+    <!--Stylesheet for the login page.-->
+    <link rel="stylesheet" type="text/css" href="uat-login.css"/>
+    <!--Where the loginValidate() fucntion is stored.-->
+    <script src="login-validation.js"></script>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+    <img src="UATspaceLogo.jpg"/>
+    <br>
+    <h1> UAT Space Program</h1>
+    <h2> AUTHORIZED PERSONEL ONLY!</h2>
+    <h3> Please log in or leave site.</h3>
+    <br>
+    <!--This "id" was added so we can call on this element and change it later. This is where error messages will pop up.-->
+    <h4 id="status"></h4>
+    <br>
+    <!--<form> tag defines the elements that will be placed in a form on the page for the user.
+        onsubmit="return false" prevents the page from changing until function validates. Without this, it will look like page is refreshing if input is left blank.--> 
+    <form onsubmit="return false">
+        <!--<input> tag specifies a area for user input. Added "id" to inputs so JavaScript and CSS can use specific elements.-->
+        <p>First Name: <input type="text" size=40 id="fName"></p><br>
+        <p>Last Name:   <input type="text" size=40 id="lName"></p><br>                            
+         <!--type="number" so program knows not to accept strings. "min" sets lowest value for arrow buttons, similarly "max" sets the highest value. 
+             !!value === Boolean(value) so the "oninput" section means: 
+             as long as the value of "this.value" is true and its absolute value is greater than or equal to 0 then it will accept the input "this.value", otherwise, input will equal "null".-->
+        <p>Badge Number: <input type="number" size=50 id="bNum" min=0 max=999 
+            oninput="this.value = !!this.value && Math.abs(this.value) >= 0 ? (this.value) : null"></p><br>
+            <!--type="submit" is a button, when clicked, it will run the function to validate the input.-->
+        <p><input id="subButton" type="submit" value="Login" onclick="loginValidate()"></p>
+        
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+
+</html>

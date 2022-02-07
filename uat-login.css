@@ -1,0 +1,43 @@
+/* Stylesheet for UAT Login assignment for CSC 102. Code written by Isiah Torres. */
+body
+{   background-color: white;
+    /* added multiple colors to gradient effect */
+    background-image: linear-gradient(0deg, white, rgb(235, 98, 98), rgb(201, 46, 46), rgb(94, 17, 17), black);
+    background-repeat: no-repeat;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;}
+
+form {
+    font-weight: bolder;
+    text-align: center;
+    
+}
+
+img
+{   
+    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;}
+/* This customizes the submit button at the end of the form */    
+#subButton {
+    width: 120px;
+    height: 40px;
+    background-color: black;
+    border-width: 5px;
+    border-radius: 200px;
+    border-color: white;
+    font-weight: bolder;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+    
+h2 {color:rgb(240, 203, 39);
+    font: bold;
+    }
+
+h3 {
+    color: white;
+    }
